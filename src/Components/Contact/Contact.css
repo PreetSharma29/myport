@@ -1,0 +1,156 @@
+.contact-form{
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+}
+.move{
+    margin-top: 2rem;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.me{
+   transform: scale(0.8);
+   padding-bottom: 11rem;
+}
+
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    outline:none;
+    border: 2px solid var(--red);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.c-right .user::placeholder{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.cubem{
+    z-index: -5;
+    position: absolute;
+}
+
+.l-text{
+    font-size: 2.8rem;
+    display: block;
+    text-align: center;
+    margin-left: 2.9rem;
+}
+
+.touch{
+    color: var(--black);
+    margin-top: 4.6rem;
+}
+
+.contact{
+    color: var(--red);
+    font-weight: 500;
+}
+
+.c-but{
+    display: flex;
+
+}
+
+.cbut{
+    padding: 11px 80px 11px 80px;
+    /* margin-left: 2rem; */
+    justify-content: center;
+    
+}
+
+.clear{
+    margin-left: 1rem;
+    border: solid 1px var(--red);
+    background-color: var(--white);
+    color: var(--red);
+}
+
+.clear:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.submit:hover{
+    background-color: #e53939;
+}
+
+.footer{
+    margin-top: -6rem;
+    color: var(--red);
+    font-size: 0.84rem;
+    padding-bottom: 1.6rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px){
+
+    *{
+        padding: 0rem;
+        margin: 0rem;
+        
+    }
+    .contact-form{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .move{
+        margin-top: -1rem;
+    }
+    .move>*{
+        padding-top: 3.5rem;
+    }
+
+    .cubem{
+        margin-left: 3.8rem;
+    }
+
+    .l-text{
+        margin-left: -0.9rem;
+    }
+
+    .c-right{
+        /* margin-top: -90rem; */
+        margin-top: -35rem;
+        margin-left: 6rem;
+        transform: scale(0.1);
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    
+    .c-right>form{
+       transform: scale(7.8);
+       margin-left: -66rem;
+       margin-top: 7rem;
+       height: 40rem;
+    }
+
+    .cbut{
+        padding: 11px 60px 11px 60px;
+        /* margin-left: 2rem; */
+        justify-content: center;
+        
+    }
+}
